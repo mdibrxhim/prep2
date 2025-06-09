@@ -15,7 +15,7 @@ app.use(express.json());
 // MongoDB Connection
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGODB_URI, {
+    const conn = await mongoose.connect(process.MONGODB_URI, {
       retryWrites: true,
       w: 'majority'
     });
@@ -30,7 +30,7 @@ const connectDB = async () => {
 //  change will be visible here 
 
 
-// i tooo can push hereeee 
+// i tooo can push hereeee
 
 
 

@@ -8,6 +8,9 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(express.json());
+// imagine i changed code now 
+
+
 
 // MongoDB Connection
 const connectDB = async () => {
@@ -23,6 +26,8 @@ const connectDB = async () => {
     process.exit(1);
   }
 };
+
+//  change will be visible here 
 
 // Connect to MongoDB
 connectDB();
